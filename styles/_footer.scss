@@ -1,0 +1,27 @@
+footer {
+  min-height: 25vh;
+  background: $purple-color;
+  color: white;
+  @include flex(center, center, column);
+}
+
+.footer-container {
+  @include flex(center, center, column);
+  #logo {
+    flex: 0;
+  }
+  .social-icons-footer {
+    @include flex(center, center, row);
+    padding: 0.5rem;
+    .social-icon {
+      margin: 0.5rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer-container {
+    text-align: center;
+  }
+}

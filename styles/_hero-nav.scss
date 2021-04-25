@@ -1,0 +1,85 @@
+/*Navbar*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  padding: 2rem;
+  display: flex;
+  color: #ffff;
+  z-index: 1;
+}
+
+/*Styles after scroll*/
+.scrolling-active {
+  background: $purple-color;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  a:hover {
+    color: $transition-color;
+    transition: all 0.3s ease;
+  }
+  a:active {
+    color: $transition-color;
+  }
+}
+
+nav {
+  margin: auto;
+  width: 90%;
+  @include flex(center, center, row);
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 20rem;
+  }
+  a {
+    font-size: 2rem;
+    color: #ffff;
+    text-transform: uppercase;
+  }
+  a:hover {
+    color: $purple-color;
+    transition: all 0.3s ease;
+  }
+  a:active {
+    color: $purple-color;
+  }
+}
+
+#logo {
+  cursor: pointer;
+  font-size: 4rem;
+  font-family: $special-font;
+  flex: 1 1 40rem;
+}
+
+/*Hero Section*/
+#hero-section {
+  min-height: 100vh;
+  background: url("../images/hero.png");
+  @include background;
+  @include flex(center, center, column);
+  color: white;
+  text-align: center;
+  h1 {
+    text-transform: uppercase;
+    font-family: $special-font;
+    font-size: 8rem;
+  }
+}
+
+.social-icons {
+  @include flex(center, center, row);
+  padding: 2rem;
+  .social-icon {
+    padding: 4rem;
+    cursor: pointer;
+  }
+}
+
+.social-icon-link {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid white;
+}

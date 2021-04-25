@@ -1,0 +1,58 @@
+/*Services*/
+#services {
+  background: $background-color;
+  min-height: 100vh;
+  @include flex(center, center, column);
+}
+
+.service-content {
+  margin: 5rem;
+  .content-title {
+    text-align: center;
+  }
+}
+
+.service-cards {
+  @include flex(center, center, row);
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90%;
+}
+
+.service-card {
+  flex: 1 1 20rem;
+  background: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+  min-height: 40vh;
+  .service-icon {
+    text-align: center;
+    padding: 2.5rem;
+    color: $purple-color;
+  }
+  p {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    color: $dark-grey-color;
+  }
+}
+
+/*Skills*/
+.code-skills {
+  min-height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("../images/code.gif");
+  @include background;
+  @include flex(center, center, row);
+}
+
+.code-skills-icons {
+  flex-wrap: wrap;
+  @include flex(center, center, row);
+  .code-skill-icon {
+    margin: 10rem;
+  }
+}

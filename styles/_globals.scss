@@ -1,0 +1,87 @@
+/*Algemene stijlen*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+h1 {
+  font-size: $header1;
+}
+
+h2 {
+  font-size: $header2;
+}
+
+h3 {
+  font-size: $header3;
+}
+
+p,
+li,
+a,
+button {
+  font-size: $text;
+}
+
+li,
+a,
+button {
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+/*Veel gebruikte stijlen*/
+
+.content-title {
+  font-size: 5rem;
+  color: $dark-grey-color;
+  text-decoration: underline;
+  text-decoration-color: $purple-color;
+  text-decoration-thickness: 10%;
+}
+
+.content-button {
+  background-size: 220%;
+  box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
+  color: #6a7ff9;
+  background-color: transparent;
+  background-position: 100%;
+  border: 3px solid #6a7ff9;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 3px;
+  transition: all 0.2s ease-out;
+  font-weight: 900;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    110deg,
+    #6a7ff9 0%,
+    #6a7ff9 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  font-size: 14px;
+}
+
+.content-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.25);
+  background-position: 0;
+  color: #fff;
+}
+
+.content-button:active {
+  transform: translateY(-1px);
+}
