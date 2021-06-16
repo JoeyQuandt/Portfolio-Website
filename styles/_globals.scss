@@ -12,10 +12,12 @@ html {
 
 body {
   font-family: "Kumbh Sans", sans-serif;
+  background: $background-color1;
 }
 
 h1 {
   font-size: $header1;
+  color: white;
 }
 
 h2 {
@@ -33,6 +35,10 @@ button {
   font-size: $text;
 }
 
+p {
+  color: $text-color;
+}
+
 li,
 a,
 button {
@@ -43,21 +49,64 @@ button {
 
 /*Veel gebruikte stijlen*/
 
+/*Content title h1*/
 .content-title {
   font-size: 5rem;
-  color: $dark-grey-color;
-  text-decoration: underline;
-  text-decoration-color: $purple-color;
-  text-decoration-thickness: 10%;
+  color: $header-color;
 }
 
+.content-title2 {
+  font-size: 3.5rem;
+  color: $header-color;
+}
+
+.content-title2 span {
+  color: #aa5d7d;
+  padding: 0.5rem;
+}
+
+.content-title span {
+  color: #aa5d7d;
+  padding: 0.5rem;
+}
+
+.special-link {
+  color: $light-blue-color;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*Code Title*/
+.code-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.special-code-title {
+  border: 4px solid $light-green-color;
+  width: 35rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.code-title span {
+  color: $light-green-color;
+}
+
+.code-title-information {
+  width: 75rem;
+  margin: 2rem 0;
+}
+
+/*Button*/
 .content-button {
   background-size: 220%;
   box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
-  color: #6a7ff9;
+  color: $light-blue-color;
   background-color: transparent;
   background-position: 100%;
-  border: 3px solid #6a7ff9;
+  border: 3px solid $light-blue-color;
   text-transform: uppercase;
   padding: 8px 16px;
   border-radius: 3px;
@@ -67,8 +116,8 @@ button {
   letter-spacing: 2px;
   background-image: linear-gradient(
     110deg,
-    #6a7ff9 0%,
-    #6a7ff9 50%,
+    $light-blue-color 0%,
+    $light-blue-color 50%,
     transparent 50%,
     transparent 100%
   );
@@ -84,4 +133,23 @@ button {
 
 .content-button:active {
   transform: translateY(-1px);
+}
+
+/*Background splashes*/
+.blue-code1-aboutme {
+  opacity: 50%;
+  width: 20%;
+  z-index: -1;
+  left: 0%;
+  bottom: -12.5%;
+  position: absolute;
+}
+
+.blue-code2-aboutme {
+  opacity: 50%;
+  width: 20%;
+  z-index: -1;
+  right: 0%;
+  bottom: -77.5%;
+  position: absolute;
 }

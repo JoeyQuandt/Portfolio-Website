@@ -11,14 +11,14 @@ header {
 
 /*Styles after scroll*/
 .scrolling-active {
-  background: $purple-color;
+  background: $dark-blue-color;
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
   a:hover {
-    color: $transition-color;
+    color: $light-green-color;
     transition: all 0.3s ease;
   }
   a:active {
-    color: $transition-color;
+    color: $light-green-color;
   }
 }
 
@@ -36,11 +36,11 @@ nav {
     text-transform: uppercase;
   }
   a:hover {
-    color: $purple-color;
+    color: $light-green-color;
     transition: all 0.3s ease;
   }
   a:active {
-    color: $purple-color;
+    color: $light-green-color;
   }
 }
 
@@ -81,5 +81,5 @@ nav {
 }
 
 .txt-type > .txt {
-  border-right: 0.2rem solid white;
+  border-right: 0.5rem solid $light-green-color;
 }

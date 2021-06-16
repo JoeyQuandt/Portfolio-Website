@@ -1,6 +1,8 @@
 /*Import Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kumbh+Sans:wght@400;700&display=swap");
 /*Globals*/
+/*Nieuwe Kleuren*/
+/*Nieuwe Kleuren einde*/
 /*Functies*/
 /*Linked de css bestanden*/
 /*Algemene stijlen*/
@@ -18,10 +20,12 @@ html {
 
 body {
   font-family: "Kumbh Sans", sans-serif;
+  background: #1b1e2b;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 8rem;
+  color: white;
 }
 
 h2 {
@@ -39,6 +43,10 @@ button {
   font-size: 2.5rem;
 }
 
+p {
+  color: #b3acc0;
+}
+
 li,
 a,
 button {
@@ -48,23 +56,70 @@ button {
 }
 
 /*Veel gebruikte stijlen*/
+/*Content title h1*/
 .content-title {
   font-size: 5rem;
-  color: #5d5a50;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #6a7ff9;
-          text-decoration-color: #6a7ff9;
-  text-decoration-thickness: 10%;
+  color: #ada6b9;
 }
 
+.content-title2 {
+  font-size: 3.5rem;
+  color: #ada6b9;
+}
+
+.content-title2 span {
+  color: #aa5d7d;
+  padding: 0.5rem;
+}
+
+.content-title span {
+  color: #aa5d7d;
+  padding: 0.5rem;
+}
+
+.special-link {
+  color: #80cbc4;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*Code Title*/
+.code-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.special-code-title {
+  border: 4px solid #a5be83;
+  width: 35rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.code-title span {
+  color: #a5be83;
+}
+
+.code-title-information {
+  width: 75rem;
+  margin: 2rem 0;
+}
+
+/*Button*/
 .content-button {
   background-size: 220%;
   -webkit-box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
-  color: #6a7ff9;
+  color: #80cbc4;
   background-color: transparent;
   background-position: 100%;
-  border: 3px solid #6a7ff9;
+  border: 3px solid #80cbc4;
   text-transform: uppercase;
   padding: 8px 16px;
   border-radius: 3px;
@@ -73,7 +128,7 @@ button {
   font-weight: 900;
   cursor: pointer;
   letter-spacing: 2px;
-  background-image: linear-gradient(110deg, #6a7ff9 0%, #6a7ff9 50%, transparent 50%, transparent 100%);
+  background-image: linear-gradient(110deg, #80cbc4 0%, #80cbc4 50%, transparent 50%, transparent 100%);
   font-size: 14px;
 }
 
@@ -91,6 +146,25 @@ button {
           transform: translateY(-1px);
 }
 
+/*Background splashes*/
+.blue-code1-aboutme {
+  opacity: 50%;
+  width: 20%;
+  z-index: -1;
+  left: 0%;
+  bottom: -12.5%;
+  position: absolute;
+}
+
+.blue-code2-aboutme {
+  opacity: 50%;
+  width: 20%;
+  z-index: -1;
+  right: 0%;
+  bottom: -77.5%;
+  position: absolute;
+}
+
 /*Navbar*/
 header {
   width: 100%;
@@ -106,19 +180,19 @@ header {
 
 /*Styles after scroll*/
 .scrolling-active {
-  background: #6a7ff9;
+  background: #161823;
   -webkit-box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 
 .scrolling-active a:hover {
-  color: #5d5a50;
+  color: #a5be83;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .scrolling-active a:active {
-  color: #5d5a50;
+  color: #a5be83;
 }
 
 nav {
@@ -164,13 +238,13 @@ nav a {
 }
 
 nav a:hover {
-  color: #6a7ff9;
+  color: #a5be83;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 nav a:active {
-  color: #6a7ff9;
+  color: #a5be83;
 }
 
 #logo {
@@ -240,7 +314,7 @@ nav a:active {
 }
 
 .txt-type > .txt {
-  border-right: 0.2rem solid white;
+  border-right: 0.5rem solid #a5be83;
 }
 
 /* Over mij Sectie */
@@ -313,7 +387,7 @@ nav a:active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/me.png");
+  background: url("../images/me.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -343,7 +417,7 @@ nav a:active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #6a7ff9;
+  background: #80cbc4;
   -webkit-transform: skew(30deg) translateX(125%);
           transform: skew(30deg) translateX(125%);
   opacity: 0.9;
@@ -358,7 +432,7 @@ nav a:active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #6a7ff9;
+  background: #80cbc4;
   -webkit-transform: skew(30deg) translateX(-125%);
           transform: skew(30deg) translateX(-125%);
   opacity: 0.9;
@@ -369,13 +443,13 @@ nav a:active {
 .profile-container:hover .profile-wrapper::after {
   -webkit-transform: skew(30deg) translateX(125%);
           transform: skew(30deg) translateX(125%);
-  background: #6a7ff9;
+  background: #80cbc4;
 }
 
 .profile-container:hover .profile-wrapper::before {
   -webkit-transform: skew(30deg) translateX(-125%);
           transform: skew(30deg) translateX(-125%);
-  background: #6a7ff9;
+  background: #80cbc4;
 }
 
 /* Profiel kaart */
@@ -430,23 +504,23 @@ nav a:active {
      object-fit: cover;
   border-radius: 50%;
   margin: 1rem 0;
-  border: 2px solid #6a7ff9;
+  border: 2px solid #a5be83;
 }
 
 .profile-card h2 {
   line-height: 1.2;
-  color: #222;
+  color: #b3acc0;
 }
 
 .profile-card h4 {
   line-height: 1.5;
-  color: #444;
+  color: #b3acc0;
 }
 
 .profile-card p {
   font-size: 2rem;
   line-height: 1.2;
-  color: #333;
+  color: #b3acc0;
   margin: 10px 0;
 }
 
@@ -460,7 +534,7 @@ nav a:active {
 }
 
 .skills .skill .skill-title {
-  color: #5d5a50;
+  color: #b3acc0;
   margin-bottom: 10px;
   font-weight: 400;
   font-size: 14px;
@@ -469,7 +543,7 @@ nav a:active {
 .skills .skill .skill-bar {
   width: 0;
   height: 6px;
-  background: #f0f0f0;
+  background: #222534;
   transition: 1s cubic-bezier(1, 0, 0.5, 1);
   -webkit-transition: 1s cubic-bezier(1, 0, 0.5, 1);
   -ms-transition: 1s cubic-bezier(1, 0, 0.5, 1);
@@ -482,7 +556,7 @@ nav a:active {
 .skills .skill .skill-bar span {
   float: left;
   width: 0%;
-  background: #6a7ff9;
+  background: #80cbc4;
   height: 6px;
   position: relative;
   transition: 1s cubic-bezier(1, 0, 0.5, 1);
@@ -497,7 +571,7 @@ nav a:active {
   text-align: right;
   opacity: 0;
   font-size: 14px;
-  color: #6a7ff9;
+  color: #80cbc4;
   font-weight: 400;
   top: -13px;
 }
@@ -508,10 +582,37 @@ nav a:active {
   padding: 0 15px;
 }
 
+/*Hero Sectie*/
+/*Title Banner Skills&Vaardigheden*/
+#vaardigheden-hero {
+  height: 100vh;
+  background: url("../images/skills.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vaardigheden-hero-container {
+  margin: auto;
+  width: 90%;
+}
+
+.vaardigheden-hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10rem 0rem;
+}
+
+/*Vaardigheden&Skills*/
 /*Services*/
-#services {
-  background: #f8f9fa;
-  min-height: 100vh;
+#vaardigheden {
+  background: #1b1e2b;
+  min-height: 125vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,15 +628,15 @@ nav a:active {
           flex-direction: column;
 }
 
-.service-content {
+.vaardigheden-content {
   margin: 5rem;
 }
 
-.service-content .content-title {
+.vaardigheden-content .content-title {
   text-align: center;
 }
 
-.service-cards {
+.vaardigheden-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,91 +650,294 @@ nav a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: auto;
   width: 90%;
 }
 
-.service-card {
+.vaardigheid-card {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
-  background: white;
+  background: #2a2d3e;
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
-  margin: 2rem;
-  min-height: 40vh;
+  margin: 5rem;
+  height: 350px;
+  width: 400px;
 }
 
-.service-card .service-icon {
+.vaardigheid-card .vaardigheid-icon {
+  font-size: 2.5rem;
   text-align: center;
-  padding: 2.5rem;
-  color: #6a7ff9;
+  padding: 5rem;
+  color: #80cbc4;
 }
 
-.service-card p {
+.vaardigheid-card h3 {
   padding: 1.5rem;
   text-align: center;
-}
-
-.service-card h3 {
-  text-align: center;
-  color: #5d5a50;
-}
-
-/*Skills*/
-.code-skills {
-  min-height: 50vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../images/code.gif");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../images/code.gif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.code-skills-icons {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.code-skills-icons .code-skill-icon {
-  margin: 10rem;
+  color: white;
+  background: #a5be83;
 }
 
 /*Portfolio*/
-#portfolio {
-  min-height: 100vh;
-  background: #f8f9fa;
+#projects {
+  height: 125vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #2a2d3e;
+}
+
+/*Paragraph/Article*/
+.article-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  width: 90%;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.article-container {
+  margin: 5rem;
+}
+
+.article-container p {
+  margin: 1.75rem 0rem;
+}
+
+/*Images*/
+.travelly-image {
+  height: 420px;
+  width: 375rem;
+  background: url("../images/projects/Travelly.png");
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+}
+
+.stadspel-image {
+  height: 600px;
+  width: 375rem;
+  background: url("../images/projects/stadspel.jpg");
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+}
+
+.brouwerij-kwartje-image {
+  height: 420px;
+  width: 600rem;
+  background: url("../images/projects/brouwerij-kwartje.png");
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+}
+
+.elena-joy-image {
+  height: 420px;
+  width: 600rem;
+  background: url("../images/projects/Elena-joy.png");
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+}
+
+/*Projects Selectors*/
+.tabbed-component {
+  width: 150rem;
+  max-width: 100%;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.tabbed-component .content-title {
+  text-align: center;
+  margin: 4rem;
+}
+
+.tabbed-component__section {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 8rem;
+}
+
+.tabbed-component__container {
+  width: 100%;
+}
+
+.tabbed-component__button:hover {
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+  -webkit-box-shadow: -0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: -0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.tabbed-component__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+  margin: 1rem;
+}
+
+.tabbed-component__button {
+  background-size: 220%;
+  outline: none;
+  font-family: inherit;
+  -webkit-box-shadow: -0.2rem 0.3rem 0.5rem rgba(0, 0, 0, 0.15);
+          box-shadow: -0.2rem 0.3rem 0.5rem rgba(0, 0, 0, 0.15);
+  color: #ada6b9;
+  width: 100%;
+  border: 0.2rem solid #a9cd8d;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  border-radius: 0.4rem;
+  -webkit-transition: all 0.2s, background-position 0.35s ease;
+  transition: all 0.2s, background-position 0.35s ease;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-image: linear-gradient(45deg, #2a2d3e 0, #2a2d3e 50%, #a9cd8d 50%, #a9cd8d 100%);
+  font-size: 2.5rem;
+}
+
+.tabbed-component__item--active > .tabbed-component__button {
+  background-position: 100%;
+  color: #fff;
+}
+
+.tabbed-component__item:not(:last-of-type) {
+  margin-right: 0;
+}
+
+.tabbed-component__button:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: -0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+          box-shadow: -0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.tabbed-component__section--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: fadeIn 0.5s ease;
+          animation: fadeIn 0.5s ease;
+}
+
+.tabbed-component__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 30rem;
+}
+
+/*Program Languages*/
+.program-languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.program-languages i {
+  color: #80cbc4;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+/*Resultaten*/
+.resultaten {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resultaten .special-link {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+}
+
+@media screen and (max-width: 960px) {
+  .tabbed-component__list {
+    margin-bottom: 50rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .travelly-image,
+  .stadspel-image,
+  .brouwerij-kwartje-image,
+  .elena-joy-image {
+    height: 300px;
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 /*Drawings*/
+#drawings {
+  min-height: 100vh;
+}
+
 img {
   width: 100%;
 }
@@ -669,7 +973,7 @@ img {
 
 .content {
   position: absolute;
-  background: #6a7ff9;
+  background: #80cbc4;
   color: white;
   margin-top: 1em;
 }
@@ -722,6 +1026,37 @@ img {
   }
 }
 
+/*Hero Sectie*/
+/*Title Banner Skills&Vaardigheden*/
+#contact-hero {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 30, 43, 0.5)), to(transparent)), url("../images/contact-hero.jpg");
+  background: linear-gradient(rgba(27, 30, 43, 0.5), transparent), url("../images/contact-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-hero-container {
+  margin: auto;
+  width: 90%;
+}
+
+.contact-hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10rem 0rem;
+}
+
+.contact-text {
+  color: white;
+}
+
 #contact {
   min-height: 100vh;
   background: url("../images/contact.png");
@@ -744,7 +1079,7 @@ img {
 }
 
 .contact-background {
-  background: white;
+  background: #1b1e2b;
   min-height: 50vh;
   margin: auto;
   border-radius: 30px;
@@ -786,7 +1121,8 @@ input {
   display: block;
   width: 300px;
   border: none;
-  border-bottom: 1px solid #757575;
+  background: #1b1e2b;
+  border-bottom: 1px solid #a5be83;
 }
 
 input:focus {
@@ -795,7 +1131,7 @@ input:focus {
 
 /* LABEL ======================================= */
 label {
-  color: #5d5a50;
+  color: white;
   font-size: 18px;
   font-weight: normal;
   position: absolute;
@@ -812,7 +1148,7 @@ input:focus ~ label,
 input:valid ~ label {
   top: -20px;
   font-size: 14px;
-  color: #5264ae;
+  color: #a5be83;
 }
 
 /* BOTTOM BARS ================================= */
@@ -829,7 +1165,7 @@ input:valid ~ label {
   width: 0;
   bottom: 1px;
   position: absolute;
-  background: #5264ae;
+  background: #a5be83;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
@@ -869,7 +1205,7 @@ input:focus ~ .highlight {
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
   from {
-    background: #5264ae;
+    background: #a5be83;
   }
   to {
     width: 0;
@@ -879,7 +1215,7 @@ input:focus ~ .highlight {
 
 @keyframes inputHighlighter {
   from {
-    background: #5264ae;
+    background: #a5be83;
   }
   to {
     width: 0;
@@ -889,7 +1225,7 @@ input:focus ~ .highlight {
 
 footer {
   min-height: 25vh;
-  background: #6a7ff9;
+  background: #161823;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,6 +1298,9 @@ footer {
   html {
     font-size: 50%;
   }
+  .background {
+    display: none;
+  }
   /*Header Section*/
   #hero-section h1 {
     font-size: 4.5rem;
@@ -973,7 +1312,22 @@ footer {
   .profile {
     padding: 10rem 0;
   }
-  /*Services*/
+  /*Skills*/
+  .vaardigheden-cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .vaardigheid-card {
+    height: 250px;
+    width: 300px;
+  }
+  .vaardigheid-icon {
+    font-size: 1.5rem;
+  }
+  /*Portfolio*/
+  #projects {
+    height: 190vh;
+  }
   /*Contact*/
   .contact-background {
     width: 100%;
@@ -1006,7 +1360,7 @@ footer {
     font-size: 1.5rem;
   }
   .nav-links {
-    background: #6a7ff9;
+    background: #161823;
     width: 100%;
     height: 100%;
     position: fixed;
