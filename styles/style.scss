@@ -59,7 +59,10 @@ $special-font: "Bebas Neue", cursive;
     width: 40rem;
   }
   /*Header Section*/
+
   #hero-section {
+    background: url("../images/hero-mobile.png");
+    background-repeat: no-repeat;
     h1 {
       font-size: 4.5rem;
     }

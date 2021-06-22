@@ -811,7 +811,7 @@ nav a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 150vh;
+  height: 130vh;
 }
 
 .tabbed-component__container {
@@ -1320,6 +1320,10 @@ footer {
     width: 40rem;
   }
   /*Header Section*/
+  #hero-section {
+    background: url("../images/hero-mobile.png");
+    background-repeat: no-repeat;
+  }
   #hero-section h1 {
     font-size: 4.5rem;
   }
