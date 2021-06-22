@@ -58,7 +58,6 @@
   background: url("../images/projects/brouwerij-kwartje.png");
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -204,6 +203,7 @@
   .elena-joy-image {
     height: 300px;
     width: 100%;
+    background-position: center;
     margin-left: 0;
   }
 }
