@@ -1,6 +1,6 @@
 /*Portfolio*/
 #projects {
-  height: 125vh;
+  height: 200vh;
   display: flex;
   background: $background-color2;
 }
@@ -33,39 +33,50 @@
 /*Images*/
 .travelly-image {
   height: 420px;
-  width: 375rem;
-  background: url("../images/projects/Travelly.png");
+  width: 800rem;
+  background: url("../images/projects/travelly.png");
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   margin-left: 60px;
 }
 
 .stadspel-image {
-  height: 600px;
-  width: 375rem;
-  background: url("../images/projects/stadspel.jpg");
+  height: 420px;
+  width: 800rem;
+  background: url("../images/projects/stadspel.png");
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   margin-left: 60px;
 }
 .brouwerij-kwartje-image {
   height: 420px;
-  width: 600rem;
+  width: 800rem;
   background: url("../images/projects/brouwerij-kwartje.png");
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 60px;
+}
+
+.brouwerij-kwartje-image2 {
+  height: 420px;
+  width: 800rem;
+  background: url("../images/projects/brouwerij-kwartje-style-guide.png");
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .elena-joy-image {
   height: 420px;
-  width: 600rem;
-  background: url("../images/projects/Elena-joy.png");
+  width: 800rem;
+  background: url("../images/projects/elena-joy.png");
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   margin-left: 60px;
 }
@@ -86,8 +97,7 @@
   display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 8rem;
+  height: 150vh;
 }
 
 .tabbed-component__container {
@@ -154,7 +164,6 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 30rem;
 }
 
 /*Program Languages*/
@@ -178,8 +187,8 @@
 
 @media screen and (max-width: 960px) {
   .tabbed-component__list {
-    margin-bottom: 50rem;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
   }
   .article {
     flex-direction: column;
@@ -187,9 +196,10 @@
   .travelly-image,
   .stadspel-image,
   .brouwerij-kwartje-image,
+  .brouwerij-kwartje-image2,
   .elena-joy-image {
     height: 300px;
-    width: 100%;
+    width: 120%;
     margin-left: 0;
   }
 }

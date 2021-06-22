@@ -48,6 +48,16 @@ $special-font: "Bebas Neue", cursive;
   .background {
     display: none;
   }
+  /*Special Titles*/
+  .content-title {
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  .code-title-information {
+    width: 40rem;
+  }
   /*Header Section*/
   #hero-section {
     h1 {
@@ -68,13 +78,20 @@ $special-font: "Bebas Neue", cursive;
   .vaardigheid-card {
     height: 250px;
     width: 300px;
+    margin: 2.5rem;
   }
   .vaardigheid-icon {
     font-size: 1.5rem;
   }
   /*Portfolio*/
+  .tabbed-component__button {
+    font-size: 2rem;
+  }
   #projects {
-    height: 190vh;
+    height: 150vh;
+  }
+  .proces {
+    display: none;
   }
   /*Contact*/
   .contact-background {

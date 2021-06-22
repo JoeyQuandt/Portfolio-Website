@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kumbh+Sans:wght@400;700&display=swap");
 /*Globals*/
 /*Nieuwe Kleuren*/
-/*Nieuwe Kleuren einde*/
 /*Functies*/
 /*Linked de css bestanden*/
 /*Algemene stijlen*/
@@ -682,7 +681,7 @@ nav a:active {
 
 /*Portfolio*/
 #projects {
-  height: 125vh;
+  height: 200vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -736,44 +735,56 @@ nav a:active {
 /*Images*/
 .travelly-image {
   height: 420px;
-  width: 375rem;
-  background: url("../images/projects/Travelly.png");
+  width: 800rem;
+  background: url("../images/projects/travelly.png");
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   margin-left: 60px;
 }
 
 .stadspel-image {
-  height: 600px;
-  width: 375rem;
-  background: url("../images/projects/stadspel.jpg");
+  height: 420px;
+  width: 800rem;
+  background: url("../images/projects/stadspel.png");
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   margin-left: 60px;
 }
 
 .brouwerij-kwartje-image {
   height: 420px;
-  width: 600rem;
+  width: 800rem;
   background: url("../images/projects/brouwerij-kwartje.png");
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 60px;
+}
+
+.brouwerij-kwartje-image2 {
+  height: 420px;
+  width: 800rem;
+  background: url("../images/projects/brouwerij-kwartje-style-guide.png");
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .elena-joy-image {
   height: 420px;
-  width: 600rem;
-  background: url("../images/projects/Elena-joy.png");
+  width: 800rem;
+  background: url("../images/projects/elena-joy.png");
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   margin-left: 60px;
 }
@@ -800,10 +811,7 @@ nav a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 8rem;
+  height: 150vh;
 }
 
 .tabbed-component__container {
@@ -879,7 +887,6 @@ nav a:active {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin-bottom: 30rem;
 }
 
 /*Program Languages*/
@@ -913,9 +920,9 @@ nav a:active {
 
 @media screen and (max-width: 960px) {
   .tabbed-component__list {
-    margin-bottom: 50rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 2rem;
   }
   .article {
     -webkit-box-orient: vertical;
@@ -926,9 +933,10 @@ nav a:active {
   .travelly-image,
   .stadspel-image,
   .brouwerij-kwartje-image,
+  .brouwerij-kwartje-image2,
   .elena-joy-image {
     height: 300px;
-    width: 100%;
+    width: 120%;
     margin-left: 0;
   }
 }
@@ -1301,6 +1309,16 @@ footer {
   .background {
     display: none;
   }
+  /*Special Titles*/
+  .content-title {
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  .code-title-information {
+    width: 40rem;
+  }
   /*Header Section*/
   #hero-section h1 {
     font-size: 4.5rem;
@@ -1320,13 +1338,20 @@ footer {
   .vaardigheid-card {
     height: 250px;
     width: 300px;
+    margin: 2.5rem;
   }
   .vaardigheid-icon {
     font-size: 1.5rem;
   }
   /*Portfolio*/
+  .tabbed-component__button {
+    font-size: 2rem;
+  }
   #projects {
-    height: 190vh;
+    height: 150vh;
+  }
+  .proces {
+    display: none;
   }
   /*Contact*/
   .contact-background {
