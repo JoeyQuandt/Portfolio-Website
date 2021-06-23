@@ -757,6 +757,18 @@ nav a:active {
   margin-left: 60px;
 }
 
+.stadspel-image2 {
+  height: 420px;
+  width: 800rem;
+  background: url("../images/projects/stadspel-proces.png");
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+}
+
 .brouwerij-kwartje-image {
   height: 420px;
   width: 800rem;
@@ -935,6 +947,7 @@ nav a:active {
   }
   .travelly-image,
   .stadspel-image,
+  .stadspel-image2,
   .brouwerij-kwartje-image,
   .brouwerij-kwartje-image2,
   .elena-joy-image {
