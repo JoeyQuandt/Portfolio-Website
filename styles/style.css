@@ -681,7 +681,7 @@ nav a:active {
 
 /*Portfolio*/
 #projects {
-  height: 200vh;
+  height: 270vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
