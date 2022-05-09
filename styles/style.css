@@ -1260,7 +1260,7 @@ footer {
   }
   /*Skills*/
   #vaardigheden-hero {
-    height: 200vh;
+    height: 150vh;
   }
   .vaardigheden-cards {
     -ms-flex-wrap: wrap;
@@ -1278,9 +1278,12 @@ footer {
   .tabbed-component__button {
     font-size: 2rem;
   }
+  .proces {
+    display: none;
+  }
   /*Contact*/
   #contact-hero {
-    height: 250vh;
+    height: 100vh;
   }
   .contact-hero-container {
     -ms-flex-wrap: wrap;

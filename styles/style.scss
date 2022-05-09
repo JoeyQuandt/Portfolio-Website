@@ -75,7 +75,7 @@ $special-font: "Bebas Neue", cursive;
   }
   /*Skills*/
   #vaardigheden-hero {
-    height: 200vh;
+    height: 150vh;
   }
   .vaardigheden-cards {
     flex-wrap: wrap;
@@ -93,9 +93,13 @@ $special-font: "Bebas Neue", cursive;
     font-size: 2rem;
   }
 
+  .proces {
+    display: none;
+  }
+
   /*Contact*/
   #contact-hero {
-    height: 250vh;
+    height: 100vh;
   }
   .contact-hero-container {
     flex-wrap: wrap;
