@@ -19,7 +19,6 @@ $special-font: "Bebas Neue", cursive;
 @mixin flex($justify, $align, $direction) {
   display: flex;
   justify-content: $justify;
-  flex-wrap: wrap;
   align-items: $align;
   flex-direction: $direction;
 }
@@ -94,6 +93,9 @@ $special-font: "Bebas Neue", cursive;
   /*Contact*/
   #contact-hero {
     height: 150vh;
+  }
+  .contact-hero-container {
+    flex-wrap: wrap;
   }
   .contact-background {
     width: 100%;
