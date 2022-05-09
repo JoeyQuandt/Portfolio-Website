@@ -203,6 +203,8 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -218,6 +220,8 @@ nav ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -258,7 +262,8 @@ nav a:active {
 /*Hero Section*/
 #hero-section {
   min-height: 100vh;
-  background: url("../images/hero.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 30, 43, 0.5)), to(transparent)), url("../images/hero.png");
+  background: linear-gradient(rgba(27, 30, 43, 0.5), transparent), url("../images/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -268,6 +273,8 @@ nav a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -292,6 +299,8 @@ nav a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -324,6 +333,8 @@ nav a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -331,8 +342,7 @@ nav a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   min-height: 75vh;
   margin: auto;
   width: 90%;
@@ -350,6 +360,13 @@ nav a:active {
 
 .aboutme-container .aboutme-container-text h2 {
   margin-bottom: 2.5rem;
+}
+
+.code-background {
+  z-index: -1;
+  position: relative;
+  right: 10rem;
+  bottom: 28rem;
 }
 
 .profile {
@@ -386,7 +403,7 @@ nav a:active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/me.jpg");
+  background: url("../images/ik.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -461,6 +478,8 @@ nav a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -618,6 +637,8 @@ nav a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -642,6 +663,8 @@ nav a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -679,30 +702,8 @@ nav a:active {
   background: #a5be83;
 }
 
-/*Portfolio*/
-#projects {
-  height: 270vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #2a2d3e;
-}
-
 /*Paragraph/Article*/
 .article-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin: auto;
   width: 90%;
 }
@@ -823,7 +824,7 @@ nav a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 130vh;
+  height: 200vh;
 }
 
 .tabbed-component__container {
@@ -958,116 +959,40 @@ nav a:active {
   }
 }
 
-/*Drawings*/
-#drawings {
-  min-height: 100vh;
-}
-
-img {
-  width: 100%;
-}
-
-.grid {
+/*Hero Sectie*/
+/*Title Banner Skills&Vaardigheden*/
+#contact-hero {
+  background: #161823;
+  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-  padding: 10rem 0;
-}
-
-.container .content-title {
-  text-align: center;
-  padding: 5rem;
-}
-
-.grid-col {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 0 0.2em;
-}
-
-.grid-col--2,
-.grid-col--3 {
-  display: none;
-}
-
-.content {
-  position: absolute;
-  background: #80cbc4;
-  color: white;
-  margin-top: 1em;
-}
-
-.content h2 {
-  margin: 0.2em 0.5em;
-  font-size: 1.5rem;
-}
-
-/*Portfolio for bigger screens*/
-@media (min-width: 768px) {
-  .container {
-    width: 90%;
-  }
-  .grid-col--2 {
-    display: block;
-  }
-  .grid-col {
-    padding: 0 0.5em;
-  }
-  img {
-    margin-bottom: 0.8em;
-  }
-  .content {
-    opacity: 0;
-    -webkit-transform: translateX(-0.5em);
-            transform: translateX(-0.5em);
-    -webkit-transition: all 2s;
-    transition: all 2s;
-    will-change: opacity, transform;
-  }
-  .grid-item:hover {
-    cursor: pointer;
-  }
-  .grid-item:hover .content {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@media (min-width: 1080px) {
-  .grid-col--3 {
-    display: block;
-  }
-  .container {
-    width: 90%;
-    margin: auto;
-    padding: 10rem;
-  }
-}
-
-/*Hero Sectie*/
-/*Title Banner Skills&Vaardigheden*/
-#contact-hero {
-  height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 30, 43, 0.5)), to(transparent)), url("../images/contact-hero.jpg");
-  background: linear-gradient(rgba(27, 30, 43, 0.5), transparent), url("../images/contact-hero.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .contact-hero-container {
   margin: auto;
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .contact-hero-text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1075,7 +1000,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10rem 0rem;
 }
 
 .contact-text {
@@ -1084,7 +1008,7 @@ img {
 
 #contact {
   min-height: 100vh;
-  background: url("../images/contact.png");
+  background: url("../images/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1094,6 +1018,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1119,6 +1045,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1258,6 +1186,8 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1274,6 +1204,8 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1296,6 +1228,8 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1338,7 +1272,7 @@ footer {
   }
   /*Header Section*/
   #hero-section {
-    background: url("../images/hero-mobile.png");
+    background: url("../images/hero.png");
     background-repeat: no-repeat;
   }
   #hero-section h1 {
@@ -1368,13 +1302,10 @@ footer {
   .tabbed-component__button {
     font-size: 2rem;
   }
-  #projects {
+  /*Contact*/
+  #contact-hero {
     height: 150vh;
   }
-  .proces {
-    display: none;
-  }
-  /*Contact*/
   .contact-background {
     width: 100%;
   }

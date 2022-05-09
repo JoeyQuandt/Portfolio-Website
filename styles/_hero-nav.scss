@@ -54,7 +54,8 @@ nav {
 /*Hero Section*/
 #hero-section {
   min-height: 100vh;
-  background: url("../images/hero.png");
+  background: linear-gradient(rgba(27, 30, 43, 0.5), transparent),
+    url("../images/hero.png");
   @include background;
   @include flex(center, center, column);
   color: white;

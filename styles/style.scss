@@ -15,11 +15,11 @@ $header-color: #ada6b9;
 $background-color1: #1b1e2b;
 $background-color2: #2a2d3e;
 $special-font: "Bebas Neue", cursive;
-
 /*Functies*/
 @mixin flex($justify, $align, $direction) {
   display: flex;
   justify-content: $justify;
+  flex-wrap: wrap;
   align-items: $align;
   flex-direction: $direction;
 }
@@ -61,7 +61,7 @@ $special-font: "Bebas Neue", cursive;
   /*Header Section*/
 
   #hero-section {
-    background: url("../images/hero-mobile.png");
+    background: url("../images/hero.png");
     background-repeat: no-repeat;
     h1 {
       font-size: 4.5rem;
@@ -90,13 +90,11 @@ $special-font: "Bebas Neue", cursive;
   .tabbed-component__button {
     font-size: 2rem;
   }
-  #projects {
+
+  /*Contact*/
+  #contact-hero {
     height: 150vh;
   }
-  .proces {
-    display: none;
-  }
-  /*Contact*/
   .contact-background {
     width: 100%;
   }

@@ -1,15 +1,6 @@
-/*Portfolio*/
-#projects {
-  height: 270vh;
-  display: flex;
-  background: $background-color2;
-}
+
 /*Paragraph/Article*/
 .article-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   margin: auto;
   width: 90%;
 }
@@ -108,7 +99,7 @@
   display: none;
   flex-direction: column;
   align-items: center;
-  height: 130vh;
+  height: 200vh;
 }
 
 .tabbed-component__container {
@@ -217,95 +208,5 @@
     width: 100%;
     background-position: center;
     margin-left: 0;
-  }
-}
-
-/*Drawings*/
-#drawings {
-  min-height: 100vh;
-}
-
-img {
-  width: 100%;
-}
-
-.grid {
-  display: flex;
-}
-
-.container {
-  width: 90%;
-  margin: auto;
-  padding: 10rem 0;
-  .content-title {
-    text-align: center;
-    padding: 5rem;
-  }
-}
-
-.grid-col {
-  flex: 1;
-  padding: 0 0.2em;
-}
-
-.grid-col--2,
-.grid-col--3 {
-  display: none;
-}
-
-.content {
-  position: absolute;
-  background: $light-blue-color;
-  color: white;
-  margin-top: 1em;
-
-  h2 {
-    margin: 0.2em 0.5em;
-    font-size: 1.5rem;
-  }
-}
-
-/*Portfolio for bigger screens*/
-@media (min-width: 768px) {
-  .container {
-    width: 90%;
-  }
-  .grid-col--2 {
-    display: block;
-  }
-
-  .grid-col {
-    padding: 0 0.5em;
-  }
-
-  img {
-    margin-bottom: 0.8em;
-  }
-
-  .content {
-    opacity: 0;
-    transform: translateX(-0.5em);
-    transition: all 2s;
-    will-change: opacity, transform;
-  }
-
-  .grid-item:hover {
-    cursor: pointer;
-
-    .content {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-}
-
-@media (min-width: 1080px) {
-  .grid-col--3 {
-    display: block;
-  }
-  .container {
-    width: 90%;
-    margin: auto;
-    padding: 10rem;
   }
 }

@@ -1,21 +1,21 @@
 /*Hero Sectie*/
 /*Title Banner Skills&Vaardigheden*/
 #contact-hero {
-  height: 100vh;
-  background: linear-gradient(rgba(27, 30, 43, 0.5), transparent),
-    url("../images/contact-hero.jpg");
-  @include background;
+  background: $dark-blue-color;
+  height: 75vh;
+  display: flex;
 }
 
 .contact-hero-container {
   margin: auto;
   width: 90%;
+  @include flex(center, center, row);
 }
 
 .contact-hero-text {
+  flex: 2 1 40rem;
   display: flex;
   flex-direction: column;
-  padding: 10rem 0rem;
 }
 
 .contact-text {
@@ -24,7 +24,7 @@
 
 #contact {
   min-height: 100vh;
-  background: url("../images/contact.png");
+  background: url("../images/hero.png");
   @include background;
   @include flex(center, center, column);
 }

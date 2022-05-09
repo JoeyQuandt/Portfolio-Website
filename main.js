@@ -1,9 +1,3 @@
-/*Gallery*/
-var colc = new Colcade(".grid", {
-  columns: ".grid-col",
-  items: ".grid-item",
-});
-
 /*AOS Animation*/
 AOS.init({
   duration: 1200,
