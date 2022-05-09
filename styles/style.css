@@ -1259,6 +1259,9 @@ footer {
     padding: 10rem 0;
   }
   /*Skills*/
+  #vaardigheden-hero {
+    height: 150vh;
+  }
   .vaardigheden-cards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1277,7 +1280,7 @@ footer {
   }
   /*Contact*/
   #contact-hero {
-    height: 200vh;
+    height: 150vh;
   }
   .contact-hero-container {
     -ms-flex-wrap: wrap;
