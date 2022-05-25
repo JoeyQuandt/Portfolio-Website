@@ -1,9 +1,9 @@
-/*Import Fonts*/
+/*===Import Fonts===*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kumbh+Sans:wght@400;700&display=swap");
-/*Globals*/
+/*===Globals===*/
 /*Nieuwe Kleuren*/
-/*Functies*/
-/*Linked de css bestanden*/
+/*===Functies===*/
+/*===Linked de css bestanden===*/
 /*Algemene stijlen*/
 * {
   margin: 0;
@@ -164,7 +164,7 @@ button {
   position: absolute;
 }
 
-/*Navbar*/
+/*===Navbar===*/
 header {
   width: 100%;
   position: fixed;
@@ -177,7 +177,7 @@ header {
   z-index: 1;
 }
 
-/*Styles after scroll*/
+/*===Styles after scroll===*/
 .scrolling-active {
   background: #161823;
   -webkit-box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
@@ -255,7 +255,7 @@ nav a:active {
           flex: 1 1 40rem;
 }
 
-/*Hero Section*/
+/*===Hero Section===*/
 #hero-section {
   min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 30, 43, 0.5)), to(transparent)), url("../images/hero.png");
@@ -592,8 +592,9 @@ nav a:active {
 /*Hero Sectie*/
 /*Title Banner Skills&Vaardigheden*/
 #vaardigheden-hero {
-  height: 100vh;
-  background: url("../images/skills.png");
+  height: 75vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 30, 43, 0.5)), to(transparent)), url("../images/skills.png");
+  background: linear-gradient(rgba(27, 30, 43, 0.5), transparent), url("../images/skills.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -615,76 +616,16 @@ nav a:active {
   padding: 10rem 0rem;
 }
 
-/*Vaardigheden&Skills*/
-/*Services*/
-#vaardigheden {
-  background: #1b1e2b;
-  min-height: 125vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.vaardigheden-hero-text p {
+  color: white;
 }
 
-.vaardigheden-content {
-  margin: 5rem;
-}
-
-.vaardigheden-content .content-title {
-  text-align: center;
-}
-
-.vaardigheden-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: auto;
-  width: 90%;
-}
-
-.vaardigheid-card {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 20rem;
-          flex: 1 1 20rem;
-  background: #2a2d3e;
-  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
-  margin: 5rem;
-  height: 350px;
-  width: 400px;
-}
-
-.vaardigheid-card .vaardigheid-icon {
-  font-size: 2.5rem;
-  text-align: center;
-  padding: 5rem;
+.vaardigheden-hero-text .special-link {
   color: #80cbc4;
 }
 
-.vaardigheid-card h3 {
-  padding: 1.5rem;
-  text-align: center;
-  color: white;
-  background: #a5be83;
+#projects {
+  height: 300vh;
 }
 
 /*Paragraph/Article*/
@@ -1230,9 +1171,6 @@ footer {
   html {
     font-size: 50%;
   }
-  .background {
-    display: none;
-  }
   /*Special Titles*/
   .content-title {
     font-size: 3rem;
@@ -1275,15 +1213,25 @@ footer {
     font-size: 1.5rem;
   }
   /*Portfolio*/
-  .tabbed-component__button {
-    font-size: 2rem;
+  #projects {
+    height: 250vh;
+    margin: auto;
+    width: 90%;
+    display: none;
   }
   .proces {
     display: none;
   }
+  .tabbed-component__button {
+    font-size: 2rem;
+  }
   /*Contact*/
   #contact-hero {
-    height: 100vh;
+    height: 125vh;
+    display: none;
+  }
+  #contact {
+    display: none;
   }
   .contact-hero-container {
     -ms-flex-wrap: wrap;
