@@ -624,8 +624,85 @@ nav a:active {
   color: #80cbc4;
 }
 
+#skills-card {
+  margin: auto;
+  width: 90%;
+}
+
+.skills-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 75vh;
+}
+
+.skill-card {
+  background: #161823;
+  height: 300px;
+}
+
+.skills-card .skill-card {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.skills-card .skill-card H4 {
+  color: white;
+  font-size: 3.5rem;
+  text-align: center;
+  border-bottom: 10px solid #a5be83;
+}
+
+.skills-card .skill-card ul {
+  padding: 20px;
+}
+
+.skills-card .skill-card ul li {
+  list-style-type: none;
+  color: white;
+}
+
+.slider-arrow {
+  padding: 10px;
+  font-size: 64px;
+  color: #E8F4F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slider-arrow:hover {
+  cursor: pointer;
+  color: #a5be83;
+}
+
+@media screen and (max-width: 960px) {
+  .skills-card .skill-card {
+    width: 300px;
+  }
+}
+
 #projects {
-  height: 300vh;
+  height: 200vh;
 }
 
 /*Paragraph/Article*/
@@ -750,7 +827,7 @@ nav a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 200vh;
+  height: 100vh;
 }
 
 .tabbed-component__container {
@@ -1198,7 +1275,7 @@ footer {
   }
   /*Skills*/
   #vaardigheden-hero {
-    height: 150vh;
+    height: 75vh;
   }
   .vaardigheden-cards {
     -ms-flex-wrap: wrap;
@@ -1214,10 +1291,7 @@ footer {
   }
   /*Portfolio*/
   #projects {
-    height: 250vh;
-    margin: auto;
-    width: 90%;
-    display: none;
+    height: 200vh;
   }
   .proces {
     display: none;
@@ -1228,10 +1302,6 @@ footer {
   /*Contact*/
   #contact-hero {
     height: 125vh;
-    display: none;
-  }
-  #contact {
-    display: none;
   }
   .contact-hero-container {
     -ms-flex-wrap: wrap;
