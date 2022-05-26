@@ -26,12 +26,16 @@
 #skills-card{
   margin: auto;
   width: 90%;
+  .content-title{
+    text-align: center;
+    margin: 5rem;
+  }
 }
 
 
 .skills-card {
   @include flex(center,center,row);
-  height: 75vh;
+  height: 50vh;
 }
 
 .skill-card{

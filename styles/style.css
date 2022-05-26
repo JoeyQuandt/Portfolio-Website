@@ -233,7 +233,6 @@ nav ul {
 nav a {
   font-size: 2rem;
   color: #ffff;
-  text-transform: uppercase;
 }
 
 nav a:hover {
@@ -629,6 +628,11 @@ nav a:active {
   width: 90%;
 }
 
+#skills-card .content-title {
+  text-align: center;
+  margin: 5rem;
+}
+
 .skills-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,7 +647,7 @@ nav a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 75vh;
+  height: 50vh;
 }
 
 .skill-card {
@@ -1291,7 +1295,7 @@ footer {
   }
   /*Portfolio*/
   #projects {
-    height: 200vh;
+    height: 175vh;
   }
   .proces {
     display: none;
