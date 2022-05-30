@@ -1,8 +1,8 @@
 /*Hero Sectie*/
 /*Title Banner Skills&Vaardigheden*/
 #vaardigheden-hero {
-  height: 100vh;
-  background: url("../images/skills.png");
+  height: 75vh;
+  background: linear-gradient(rgba(27, 30, 43, 0.5), transparent),url("../images/skills.png");
   @include background;
 }
 
@@ -15,46 +15,72 @@
   display: flex;
   flex-direction: column;
   padding: 10rem 0rem;
-}
-
-/*Vaardigheden&Skills*/
-/*Services*/
-#vaardigheden {
-  background: $background-color1;
-  min-height: 125vh;
-  @include flex(center, center, column);
-}
-
-.vaardigheden-content {
-  margin: 5rem;
-  .content-title {
-    text-align: center;
+  p{
+    color: white;
   }
-}
-
-.vaardigheden-cards {
-  @include flex(center, center, row);
-  margin: auto;
-  width: 90%;
-}
-
-.vaardigheid-card {
-  flex: 1 1 20rem;
-  background: $background-color2;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
-  margin: 5rem;
-  height: 350px;
-  width: 400px;
-  .vaardigheid-icon {
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 5rem;
+  .special-link{
     color: $light-blue-color;
   }
-  h3 {
-    padding: 1.5rem;
+}
+
+#skills-card{
+  margin: auto;
+  width: 90%;
+  .content-title{
     text-align: center;
-    color: white;
-    background: $light-green-color;
+    margin: 5rem;
   }
 }
+
+
+.skills-card {
+  @include flex(center,center,row);
+  height: 50vh;
+}
+
+.skill-card{
+    background: $dark-blue-color;
+    height: 300px;
+}
+
+.skills-card .skill-card {
+  width: 800px;
+  margin: 0 auto;
+}
+.skills-card .skill-card H4 {
+  color: white;
+  font-size: $header2;
+  text-align: center;
+  border-bottom: 10px solid $light-green-color;
+}
+.skills-card .skill-card ul {
+  padding: 20px;
+}
+.skills-card .skill-card ul li {
+  list-style-type: none;
+  color: white;
+}
+
+.slider-arrow {
+  padding: 10px;
+  font-size: 64px;
+  color: #E8F4F7;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.slider-arrow:hover {
+  cursor: pointer;
+  color: $light-green-color;
+}
+
+@media screen and (max-width:960px){
+  .skills-card .skill-card{
+      width: 300px;
+  }
+}
+

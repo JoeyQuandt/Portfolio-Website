@@ -1,4 +1,4 @@
-/*Navbar*/
+/*===Navbar===*/
 header {
   width: 100%;
   position: fixed;
@@ -9,7 +9,7 @@ header {
   z-index: 1;
 }
 
-/*Styles after scroll*/
+/*===Styles after scroll===*/
 .scrolling-active {
   background: $dark-blue-color;
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
@@ -33,7 +33,6 @@ nav {
   a {
     font-size: 2rem;
     color: #ffff;
-    text-transform: uppercase;
   }
   a:hover {
     color: $light-green-color;
@@ -51,7 +50,7 @@ nav {
   flex: 1 1 40rem;
 }
 
-/*Hero Section*/
+/*===Hero Section===*/
 #hero-section {
   min-height: 100vh;
   background: linear-gradient(rgba(27, 30, 43, 0.5), transparent),

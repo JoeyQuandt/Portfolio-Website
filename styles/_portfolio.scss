@@ -1,4 +1,6 @@
-
+#projects{
+  height: 200vh;
+}
 /*Paragraph/Article*/
 .article-wrapper {
   margin: auto;
@@ -99,7 +101,7 @@
   display: none;
   flex-direction: column;
   align-items: center;
-  height: 200vh;
+  height: 100vh;
 }
 
 .tabbed-component__container {

@@ -1,7 +1,7 @@
-/*Import Fonts*/
+/*===Import Fonts===*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kumbh+Sans:wght@400;700&display=swap");
 
-/*Globals*/
+/*===Globals===*/
 $header1: 8rem;
 $header2: 3.5rem;
 $header3: 3rem;
@@ -15,7 +15,7 @@ $header-color: #ada6b9;
 $background-color1: #1b1e2b;
 $background-color2: #2a2d3e;
 $special-font: "Bebas Neue", cursive;
-/*Functies*/
+/*===Functies===*/
 @mixin flex($justify, $align, $direction) {
   display: flex;
   justify-content: $justify;
@@ -29,7 +29,7 @@ $special-font: "Bebas Neue", cursive;
   background-repeat: no-repeat;
 }
 
-/*Linked de css bestanden*/
+/*===Linked de css bestanden===*/
 @import "globals";
 @import "hero-nav";
 @import "aboutme";
@@ -43,9 +43,6 @@ $special-font: "Bebas Neue", cursive;
   /*Algemene stijls*/
   html {
     font-size: 50%;
-  }
-  .background {
-    display: none;
   }
   /*Special Titles*/
   .content-title {
@@ -75,7 +72,7 @@ $special-font: "Bebas Neue", cursive;
   }
   /*Skills*/
   #vaardigheden-hero {
-    height: 150vh;
+    height: 75vh;
   }
   .vaardigheden-cards {
     flex-wrap: wrap;
@@ -89,17 +86,22 @@ $special-font: "Bebas Neue", cursive;
     font-size: 1.5rem;
   }
   /*Portfolio*/
+  #projects{
+    height: 175vh;
+  }
+  .proces{
+    display: none;
+  }
   .tabbed-component__button {
     font-size: 2rem;
   }
 
-  .proces {
-    display: none;
-  }
+
+
 
   /*Contact*/
   #contact-hero {
-    height: 100vh;
+    height: 125vh;
   }
   .contact-hero-container {
     flex-wrap: wrap;

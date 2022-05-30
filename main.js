@@ -3,6 +3,11 @@ AOS.init({
   duration: 1200,
 });
 
+
+
+
+
+
 /*Skill bar*/
 $(".skills").addClass("active");
 $(".skills .skill .skill-bar span").each(function () {

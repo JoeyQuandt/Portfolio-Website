@@ -20,15 +20,17 @@
   </head>
   <body>
     <header>
+      <!---Navigatie-->
       <nav>
         <h4 id="logo">joeyquandt</h4>
         <ul class="nav-links">
-          <li><a href="#hero-section">home</a></li>
-          <li><a href="#about-me">about</a></li>
-          <li><a href="#vaardigheden-hero">skills</a></li>
-          <li><a href="#projects">portfolio</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li><a href="#hero-section">Home</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#vaardigheden-hero">Skills</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <!--Hamburger menu-->
         <div class="burger">
           <span class="line1"></span>
           <span class="line2"></span>
@@ -37,6 +39,7 @@
       </nav>
     </header>
     <main>
+      <!--Hero sectie-->
       <section id="hero-section">
         <div class="hero-section-content" data-aos="slide-up">
           <h1>
@@ -137,6 +140,7 @@
         </div>
       </section>
 
+      <!--Vaardigheden hero-->
       <section id="vaardigheden-hero">
           <div class="vaardigheden-hero-container" data-aos="slide-right">
             <div class="vaardigheden-hero-text">
@@ -147,66 +151,57 @@
               <div class="code-title-information">
                 <p>In mijn studie werk ik aan verbeteren of opnieuw uitdenken van websites en webapplicaties</p>
                 <br></br>
-                <a href="#vaardigheden" class="special-link">Mijn Skills&Vaardigheden</a>
+                <a href="#skills-card" class="special-link">Mijn Skills&Vaardigheden</a>
               </div>
             </div>
           </div>
       </section>
 
-      <section id="vaardigheden">
-        <div class="vaardigheden-content" data-aos="slide-up">
-          <h2 class="content-title"><span>[h1]</span>Programmeertalen<span>[h1]</span></h2>
-          <div class="vaardigheden-cards">
-            <div class="vaardigheid-card">
-              <h3>HTML</h3>
-              <div class="vaardigheid-icon">
-                <i class="fab fa-html5 fa-6x"></i>
-              </div>
+      <section id="skills-card" class="bg-dark angle-right-top angle-right-bottom">
+        <h2 class="content-title"><span>[h1]</span>Vaardigheden<span>[h1]</span></h2>
+        <div class="container skills-card padding-v-lg">
+            <div value="-1" class="slider-arrow text-center">&lsaquo;</div>
+            <div class="col">
+    
+                <!-- skill slider -->
+                <div class="skill-card">
+                    <h4 class="text-white">Frontend</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SCSS</li>
+                        <li>Javascript</li>
+                        <li>WordPress(Elementor)</li>
+                    </ul>
+                </div>
+    
+                <div class="skill-card" style="display: none">
+                    <h4 class="text-white">Backend</h4>
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+    
+                <div class="skill-card" style="display: none">
+                    <h4 class="text-white">Tools</h4>
+                    <ul>
+                        <li>WordPress(Elementor)</li>
+                        <li>SCSS</li>
+                        <li>Adobe XD</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
             </div>
-            <div class="vaardigheid-card">
-              <h3>CSS</h3>
-              <div class="vaardigheid-icon">
-                <i class="fab fa-css3-alt fa-6x"></i>
-              </div>
-            </div>
-            <div class="vaardigheid-card">
-              <h3>JS</h3>
-              <div class="vaardigheid-icon">
-                <i class="fab fa-js fa-6x"></i>
-              </div>
-            </div>
-            <div class="vaardigheid-card">
-              <h3>Python</h3>
-              <div class="vaardigheid-icon">
-                <i class="fab fa-python fa-6x"></i>
-              </div>
-            </div>
-          </div>
-          <h2 class="content-title"><span>[h1]</span>Web Design<span>[h1]</span></h2>
-          <div class="vaardigheden-cards">
-            <div class="vaardigheid-card">
-              <h3>Figma</h3>
-              <div class="vaardigheid-icon">
-                <i class="fab fa-figma fa-6x"></i>
-              </div>
-            </div>
-            <div class="vaardigheid-card">
-              <h3>Wordpress</h3>
-              <div class="vaardigheid-icon">
-                <i class="fab fa-wordpress fa-6x"></i>
-              </div>
-            </div>
-            <div class="vaardigheid-card">
-              <h3>Clip Studio Paint</h3>
-              <div class="vaardigheid-icon">
-                <i class="fas fa-palette fa-6x"></i>
-              </div>
-            </div>
-            </div>
-          </div>
+            <div value="1" class="slider-arrow text-center">&rsaquo;</div>
         </div>
-      </section>
+    </section>
 
+
+
+  
       <section id="projects">
         <div class="tabbed-component" data-aos="slide-right">
           <h2 class="content-title"><span>[h1]</span>Projects<span>[h1]</span></h2>
@@ -511,5 +506,6 @@
     <script src="https://unpkg.com/colcade@0/colcade.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
+    <script src="main2.js"></script>
   </body>
 </html>
