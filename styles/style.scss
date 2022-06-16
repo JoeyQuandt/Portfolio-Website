@@ -42,7 +42,7 @@ $special-font: "Bebas Neue", cursive;
 @media screen and (max-width: 960px) {
   /*Algemene stijls*/
   html {
-    font-size: 50%;
+    font-size: 48%;
   }
   /*Special Titles*/
   .content-title {
@@ -87,7 +87,8 @@ $special-font: "Bebas Neue", cursive;
   }
   /*Portfolio*/
   #projects{
-    height: 175vh;
+    margin: auto;
+    width: 90%;
   }
   .proces{
     display: none;
